@@ -3,8 +3,8 @@ guid: 8d3157a47cef7d740ba1e38a00eaa71e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3192715578098564163
-    second: FRENCH_0
+      213: -6402963842679398230
+    second: "\u0E1C\u0E39\u0E49\u0E19\u0E33 FR_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FRENCH_0
+      name: "\u0E1C\u0E39\u0E49\u0E19\u0E33 FR_0"
       rect:
         serializedVersion: 2
-        x: 467
-        y: 0
-        width: 341
+        x: 356
+        y: 2
+        width: 647
         height: 805
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34cbb6d07edce4c20800000000000000
-      internalID: 3192715578098564163
+      spriteID: aa0ac673f4a1427a0800000000000000
+      internalID: -6402963842679398230
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6ef2bed0edfbba14daa8c39e4b5a85b8
+    spriteID: 3c9afee29550d9240ac48e041acf1964
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FRENCH_0: 3192715578098564163
+      "\u0E1C\u0E39\u0E49\u0E19\u0E33 FR_0": -6402963842679398230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

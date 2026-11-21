@@ -1057,11 +1057,11 @@ PrefabInstance:
     - target: {fileID: 2742471698564095091, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8225b673658d1b141804be64137f3e22, type: 3}
+      objectReference: {fileID: 6969251967517103221, guid: 5492119df72becc419fcf4e9e3ae46f6, type: 3}
     - target: {fileID: 5200705544059637831, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5fdd9b40a1e76ce4fb72bc44a68ec27c, type: 3}
+      objectReference: {fileID: 3319706482265602244, guid: e9948a51463fb60409ec53b2328e1112, type: 3}
     - target: {fileID: 5561802213167238023, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Name
       value: NationCard (2)
@@ -1069,6 +1069,14 @@ PrefabInstance:
     - target: {fileID: 6073233301762464992, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7338730109153838068, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_text
@@ -1272,8 +1280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 341, y: 805}
+  m_AnchoredPosition: {x: -5.399536, y: 12.0720215}
+  m_SizeDelta: {x: 647, y: 805}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593175736
 MonoBehaviour:
@@ -2478,8 +2486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SelectNation
   leaderSprites:
   - {fileID: -1477505139747921029, guid: a55aa3a89380dbf40becad28f9610558, type: 3}
-  - {fileID: 3192715578098564163, guid: 8d3157a47cef7d740ba1e38a00eaa71e, type: 3}
-  - {fileID: 21300000, guid: 2efaad94bd78c38468348cbcbcb7cf9d, type: 3}
+  - {fileID: -6402963842679398230, guid: 8d3157a47cef7d740ba1e38a00eaa71e, type: 3}
+  - {fileID: 773419499261128443, guid: 37c2a2df7bdb9a44baffc1d6842dc537, type: 3}
   - {fileID: 21300000, guid: ee29f45d409f2394fb9eda32e422a660, type: 3}
   - {fileID: 21300000, guid: e6c733fdf20692947a2f98ed0158ae4a, type: 3}
   leaderImage: {fileID: 593175736}
@@ -2935,7 +2943,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1098245280}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9997722
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3291,7 +3299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000024581204}
+  m_AnchoredPosition: {x: 0, y: 0.00050776545}
   m_SizeDelta: {x: 0, y: 715}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1344004149
@@ -3613,8 +3621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -334.48, y: -12}
-  m_SizeDelta: {x: -804, y: -260}
+  m_AnchoredPosition: {x: -329.08044, y: -24.072021}
+  m_SizeDelta: {x: -733.8391, y: -198.8115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598312263
 MonoBehaviour:
@@ -3629,7 +3637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3785,17 +3793,33 @@ PrefabInstance:
     - target: {fileID: 2742471698564095091, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b7c14a9bad551354686f62d5a98ba9ff, type: 3}
+      objectReference: {fileID: -2165273460299899174, guid: 4c994808acfb1f5429fbb5809a2ae0a9, type: 3}
     - target: {fileID: 5200705544059637831, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ca50055e0f42e724c850b57b40341526, type: 3}
+      objectReference: {fileID: 7232251743872803406, guid: c4d9757f9f67d3346bb66a70ccf51182, type: 3}
     - target: {fileID: 5561802213167238023, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Name
       value: NationCard (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5561802213167238023, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7338730109153838068, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
@@ -4925,26 +4949,26 @@ PrefabInstance:
     - target: {fileID: 5200705544059637831, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8980598162900691162, guid: eb855e5406c63b649bc3b114d043f087, type: 3}
+      objectReference: {fileID: -5539144322371146982, guid: a360437d91748094a8771e47d6d77edb, type: 3}
     - target: {fileID: 5561802213167238023, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Name
       value: NationCard
       objectReference: {fileID: 0}
     - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 424
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 425
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.17
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6420516126001162241, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.17
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
