@@ -34024,7 +34024,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c06d7ced96e2bb54596c1300baeefab8, type: 2}
   landUnitPrefab: {fileID: 1163532693369091168, guid: 03ce1fb068bb3f94daefe97364f00e81, type: 3}
   navalUnitPrefab: {fileID: 1163532693369091168, guid: ad3d6a879412b964db0589cd6e9c4d73, type: 3}
-  townPrefab: {fileID: 1163532693369091168, guid: 07a4a9f33908e134ea5f3d62ae421295, type: 3}
+  townPrefab: {fileID: 1163532693369091168, guid: 790e07fc695c77c4ca06bd28bb25523f, type: 3}
   curUnit: {fileID: 0}
   curTarget: {fileID: 0}
   curAiUnit: {fileID: 0}
