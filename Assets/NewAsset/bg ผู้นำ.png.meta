@@ -103,12 +103,12 @@ TextureImporter:
       name: "bg eng \u0E1C\u0E39\u0E49\u0E19\u0E33_0"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 1264
-        height: 843
+        width: 606
+        height: 802
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6a8ab7a5666bd464dbe574d573f10926
     internalID: 0
     vertices: []
     indices: 
