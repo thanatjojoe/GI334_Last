@@ -42,6 +42,7 @@ public class EuropeManager : MonoBehaviour
     void Start()
     {
         InitStartPrice();
+        
     }
 
     // Update is called once per frame
@@ -60,6 +61,7 @@ public class EuropeManager : MonoBehaviour
                 new EUStock(i,
                 gameMgr.ProductData[i].startBid, gameMgr.ProductData[i].startAsk,
                 normalStock);
+            
         }
     }
 
