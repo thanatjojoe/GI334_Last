@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="" />
+    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +94,8 @@
       <workItem from="1795272854332" duration="330000" />
       <workItem from="1795287057079" duration="4000" />
       <workItem from="1795287119575" duration="50000" />
+      <workItem from="1795370819622" duration="5000" />
+      <workItem from="1795370857808" duration="606000" />
     </task>
     <servers />
   </component>
