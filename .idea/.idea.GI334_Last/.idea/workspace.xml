@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="" />
+    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Leader/Eng/Icon Flag Eng.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Leader/Eng/Icon Flag Eng.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Leader/FRENCH/Icon Flag FR.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Leader/FRENCH/Icon Flag FR.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Leader/NETHERLAND/Icon Flag Netherland.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Leader/NETHERLAND/Icon Flag Netherland.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Leader/POTUGAL/Icon Flag Potugal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Leader/POTUGAL/Icon Flag Potugal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Leader/SPAIN/Icon Flag Spain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Leader/SPAIN/Icon Flag Spain.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/England.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/England.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/France.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/France.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Netherland.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Netherland.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Portugal.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Portugal.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Spain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactionSO/Spain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factions/Faction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factions/Faction.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +123,7 @@
       <workItem from="1795442689345" duration="680000" />
       <workItem from="1795454869469" duration="396000" />
       <workItem from="1795455287914" duration="430000" />
+      <workItem from="1795464981467" duration="1469000" />
     </task>
     <servers />
   </component>

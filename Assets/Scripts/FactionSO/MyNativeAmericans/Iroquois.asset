@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429d88d3deb48ff488420610fa895bd1, type: 3}
+  m_Name: Iroquois
+  m_EditorClassIdentifier: Assembly-CSharp::FactionData
+  nation: 5
+  isEuropean: 0
+  flagIcon: {fileID: 21300000, guid: e8fbb6ec3ae0c954abfa9136798e8423, type: 3}
+  shieldIcon: {fileID: 21300000, guid: e8fbb6ec3ae0c954abfa9136798e8423, type: 3}
+  unitIcon: {fileID: 0}
+  townIcon: {fileID: 21300000, guid: b66d3c82f7b5df8448afd1ee166db3ac, type: 3}
+  isTropicalNatives: 0
+  leaderSprite: {fileID: 21300000, guid: 08a75945b3a7a2043afe56a475a89246, type: 3}
