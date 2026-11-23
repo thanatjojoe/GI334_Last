@@ -19,4 +19,4 @@ MonoBehaviour:
   unitIcon: {fileID: 0}
   townIcon: {fileID: 21300000, guid: 620f6d8660ea8934498630924802ca02, type: 3}
   isTropicalNatives: 0
-  leaderSprite: {fileID: 21300000, guid: 0dcfe4236636a7941a61de48b9cf84c2, type: 3}
+  leaderSprite: {fileID: 5601739000451565784, guid: 0dcfe4236636a7941a61de48b9cf84c2, type: 3}
