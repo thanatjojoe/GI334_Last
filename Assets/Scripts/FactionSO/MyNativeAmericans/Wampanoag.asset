@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FactionData
   nation: 6
   isEuropean: 0
-  flagIcon: {fileID: 21300000, guid: 5c26008f19c3d174084c096d969b2d83, type: 3}
-  shieldIcon: {fileID: 21300000, guid: 5c26008f19c3d174084c096d969b2d83, type: 3}
+  flagIcon: {fileID: 7820167417388281873, guid: 5c26008f19c3d174084c096d969b2d83, type: 3}
+  shieldIcon: {fileID: 7820167417388281873, guid: 5c26008f19c3d174084c096d969b2d83, type: 3}
   unitIcon: {fileID: 0}
   townIcon: {fileID: 21300000, guid: 5fc5e66463299a241afcb68eb5e283d5, type: 3}
   isTropicalNatives: 1
