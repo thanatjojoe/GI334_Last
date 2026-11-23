@@ -846,7 +846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ccac77044796144c8fa5fd146148ad0, type: 2}
   m_sharedMaterial: {fileID: -9042286216902583486, guid: 3ccac77044796144c8fa5fd146148ad0, type: 2}
@@ -1603,8 +1603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160.33997, y: 0}
-  m_SizeDelta: {x: 218.0891, y: 50}
+  m_AnchoredPosition: {x: 310, y: -0}
+  m_SizeDelta: {x: 123.9135, y: 44.4334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616892766
 MonoBehaviour:
@@ -1995,8 +1995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 465, y: 0}
-  m_SizeDelta: {x: 195.6447, y: 50}
+  m_AnchoredPosition: {x: 495, y: -0.0000014305}
+  m_SizeDelta: {x: 123.9135, y: 44.4334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709106002
 MonoBehaviour:
@@ -2476,7 +2476,7 @@ PrefabInstance:
     - target: {fileID: 5200705544059637831, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -201836831070205995, guid: b1250d05a1bd6c241862081940eef203, type: 3}
+      objectReference: {fileID: 3540859432704698677, guid: f42da81713edc434fa2dc5a7a9854ede, type: 3}
     - target: {fileID: 5561802213167238023, guid: 16992e665a5e9634d94a9a34fcab4b10, type: 3}
       propertyPath: m_Name
       value: NationCard (3)
@@ -2569,8 +2569,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 709106001}
   - {fileID: 616892765}
+  - {fileID: 709106001}
   m_Father: {fileID: 874368215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3199,7 +3199,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1098245280}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9992715
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3555,7 +3555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000016144371}
+  m_AnchoredPosition: {x: 0, y: -0.0000036601677}
   m_SizeDelta: {x: 0, y: 715}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1344004149
