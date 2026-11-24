@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/UI/UI Town Panel New.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/UI/UI Town Panel New.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/StockSlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/StockSlot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UnitDrag.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UnitDrag.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +110,8 @@
       <workItem from="1795455287914" duration="430000" />
       <workItem from="1795464981467" duration="1469000" />
       <workItem from="1795539346362" duration="71000" />
+      <workItem from="1795559483413" duration="809000" />
+      <workItem from="1795560343476" duration="1085000" />
     </task>
     <servers />
   </component>

@@ -806,6 +806,10 @@ public class GameManager : MonoBehaviour
 
     public void SetupDeadUnit(Unit deadUnit)
     {
+        
+        if (deadUnit == null)
+            return;
+
         Faction faction = deadUnit.Faction;
         Hex hex = deadUnit.CurHex;
 
@@ -815,22 +819,31 @@ public class GameManager : MonoBehaviour
 
             foreach (LandUnit passenger in ship.Passengers)
             {
-                if (hex.UnitsInHex.Contains(passenger))
+                
+                if (passenger == null)
+                    continue;
+
+                if (hex != null && hex.UnitsInHex.Contains(passenger))
                     hex.UnitsInHex.Remove(passenger);
 
-                faction.Units.Remove(passenger);
+                if (faction != null)
+                    faction.Units.Remove(passenger);
+
                 Destroy(passenger.gameObject);
             }
+            ship.Passengers.Clear();
         }
 
-        if (hex.UnitsInHex.Contains(deadUnit))
+        if (hex != null && hex.UnitsInHex.Contains(deadUnit))
             hex.UnitsInHex.Remove(deadUnit);
 
-        faction.Units.Remove(deadUnit);
+        if (faction != null)
+            faction.Units.Remove(deadUnit);
 
-        if (deadUnit.gameObject != null)
-            Destroy(deadUnit.gameObject);
+       
+        Destroy(deadUnit.gameObject);
     }
+
 
     private void ShowMilitaryResultDialog(Unit winner, Unit loser)
     {
