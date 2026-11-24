@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 14
   productName: Tools
   icons:
-  - {fileID: 21300000, guid: f74bacef2dccb4040af763325c8e9c8e, type: 3}
+  - {fileID: 4409527465310317110, guid: 00fe02bb817d498469d5f8ad92733925, type: 3}
   startBid: 2
   startAsk: 3

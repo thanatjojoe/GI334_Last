@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 15
   productName: Muskets
   icons:
-  - {fileID: 21300000, guid: defb1265f5963de44940dfa73dea9e17, type: 3}
+  - {fileID: 2699834926791662345, guid: b23c833ee69045442b19e0c29cabd692, type: 3}
   startBid: 12
   startAsk: 13
