@@ -2659,7 +2659,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25
+          m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4348,7 +4348,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 3
   m_Viewport: {fileID: 1326143618}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 47556336}
@@ -41060,8 +41060,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -87.05319}
-  m_SizeDelta: {x: -20, y: 154.1064}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -20, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1657661293
 PrefabInstance:
@@ -46137,7 +46137,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 76b6e9dc13fafb046a084222f17d16ac, type: 2}
   - {fileID: 11400000, guid: e341c7e4396508e4186a4a0ca908bdd3, type: 2}
   - {fileID: 11400000, guid: 859cb1972fb8c5d43ab0d7ef7dbfd52c, type: 2}
-  - {fileID: 11400000, guid: 859cb1972fb8c5d43ab0d7ef7dbfd52c, type: 2}
   - {fileID: 11400000, guid: 97c4c9f2839d89941b7c6c4cdfbc9cfd, type: 2}
   - {fileID: 11400000, guid: 85c5d12a0993693478bfb36ab702c570, type: 2}
   - {fileID: 11400000, guid: 0558c68fa0189bb4dafc84cda1bfe75c, type: 2}
@@ -46313,8 +46312,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 88.72887}
-  m_SizeDelta: {x: 20, y: -160.54224}
+  m_AnchoredPosition: {x: -0.7902, y: 4.229004}
+  m_SizeDelta: {x: 14.2218, y: 8.4578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895347119
 MonoBehaviour:
@@ -52421,7 +52420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 700
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ccac77044796144c8fa5fd146148ad0, type: 2}
   m_sharedMaterial: {fileID: -9042286216902583486, guid: 3ccac77044796144c8fa5fd146148ad0, type: 2}
