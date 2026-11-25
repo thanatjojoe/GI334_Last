@@ -12565,7 +12565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &462278250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23111,7 +23111,7 @@ MonoBehaviour:
   warehousePriceText: {fileID: 99769315}
   emptySprite: {fileID: 21300000, guid: 495ce9d21e48acb4b89ec01e9ee99092, type: 3}
   finishSprite: {fileID: 21300000, guid: b134e010a1585b946bf89d51b93562e5, type: 3}
-  buildCost: 10
+  buildCost: 300
   turnsToBuild: 1
 --- !u!4 &907062926
 Transform:
