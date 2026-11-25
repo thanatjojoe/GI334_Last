@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Clips")]
     public AudioClip backgroundMusic;
     public AudioClip buttonClickSFX;
+    public AudioClip buttonHighlightSFX;
     public AudioClip jumpSFX;
     public AudioClip coinSFX;
 
@@ -49,12 +51,50 @@ public class AudioManager : MonoBehaviour
                 btn.onClick.RemoveListener(PlayButtonClick);
                 btn.onClick.AddListener(PlayButtonClick);
             }
+
+            AddHighlightEvent(btn.gameObject);
         }
+
+        Toggle[] allToggles = FindObjectsByType<Toggle>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        foreach (Toggle tgl in allToggles)
+        {
+            tgl.onValueChanged.RemoveListener(OnToggleValueChanged);
+            tgl.onValueChanged.AddListener(OnToggleValueChanged);
+
+            AddHighlightEvent(tgl.gameObject);
+        }
+    }
+
+    private void OnToggleValueChanged(bool isOn)
+    {
+        PlayButtonClick();
+    }
+
+    private void AddHighlightEvent(GameObject uiObj)
+    {
+        EventTrigger trigger = uiObj.GetComponent<EventTrigger>();
+        if (trigger == null)
+        {
+            trigger = uiObj.AddComponent<EventTrigger>();
+        }
+
+        trigger.triggers.RemoveAll(e => e.eventID == EventTriggerType.PointerEnter);
+
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerEnter;
+        entry.callback.AddListener((data) => { PlayButtonHighlight(); });
+        trigger.triggers.Add(entry);
     }
 
     public void PlayButtonClick()
     {
         PlaySFX(buttonClickSFX);
+    }
+
+    public void PlayButtonHighlight()
+    {
+        PlaySFX(buttonHighlightSFX);
     }
 
     public void PlayBGM(AudioClip clip)
