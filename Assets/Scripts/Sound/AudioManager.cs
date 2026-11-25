@@ -68,7 +68,10 @@ public class AudioManager : MonoBehaviour
 
     private void OnToggleValueChanged(bool isOn)
     {
-        PlayButtonClick();
+        if (isOn)
+        {
+            PlayButtonClick();
+        }
     }
 
     private void AddHighlightEvent(GameObject uiObj)
@@ -99,9 +102,17 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM(AudioClip clip)
     {
+        if (clip == null || bgmSource.clip == clip) return;
+
         bgmSource.clip = clip;
         bgmSource.loop = true;
         bgmSource.Play();
+    }
+
+    public void StopBGM()
+    {
+        bgmSource.Stop();
+        bgmSource.clip = null;
     }
 
     public void PlaySFX(AudioClip clip, float volume = 1f)
