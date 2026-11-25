@@ -2971,7 +2971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: 0}
+  m_AnchoredPosition: {x: -317, y: 0}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &104112215
@@ -3767,7 +3767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 595, y: -12}
+  m_AnchoredPosition: {x: 606, y: -18}
   m_SizeDelta: {x: 790, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &144900711
@@ -22603,8 +22603,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1278190713}
     m_Modifications:
     - target: {fileID: 1848474480264602575, guid: 732881353cb028748823c4b97107f35c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848474480264602575, guid: 732881353cb028748823c4b97107f35c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2543456717541727329, guid: 5aeda89c0f2b3f94cbe88430e12dd2bc, type: 3}
+    - target: {fileID: 1848474480264602575, guid: 732881353cb028748823c4b97107f35c, type: 3}
       propertyPath: m_Color.a
-      value: 0.9411765
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1848474480264602575, guid: 732881353cb028748823c4b97107f35c, type: 3}
       propertyPath: m_Color.b
@@ -25821,8 +25829,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1397564653}
-  - {fileID: 695330502}
   - {fileID: 1497702617}
+  - {fileID: 695330502}
   m_Father: {fileID: 813361401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -45239,7 +45247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: 0}
+  m_AnchoredPosition: {x: 150, y: 0}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840817106
@@ -45328,7 +45336,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 73.247925, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -45825,7 +45833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7580724100156194318, guid: 563d3996364e6d345961e6141b1a93f2, type: 3}
       propertyPath: money
-      value: 50000
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
