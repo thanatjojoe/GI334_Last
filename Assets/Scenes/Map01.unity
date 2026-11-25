@@ -5061,6 +5061,7 @@ GameObject:
   - component: {fileID: 248488200}
   - component: {fileID: 248488202}
   - component: {fileID: 248488201}
+  - component: {fileID: 248488203}
   m_Layer: 5
   m_Name: EuropePanel
   m_TagString: Untagged
@@ -5132,6 +5133,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248488199}
   m_CullTransparentMesh: 1
+--- !u!114 &248488203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248488199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f93026f61edcfa47be692364329986c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelBGM
+  panelMusic: {fileID: 8300000, guid: 09ac71b806b5db04db453c3635d63801, type: 3}
+  returnMusic: {fileID: 8300000, guid: e7ae25d5220cd6e469e48adbe57c8d40, type: 3}
 --- !u!1 &252401838
 GameObject:
   m_ObjectHideFlags: 0

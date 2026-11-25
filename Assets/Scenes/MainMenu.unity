@@ -964,7 +964,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   bgmSource: {fileID: 1010687031}
   sfxSource: {fileID: 723852435}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: e7ae25d5220cd6e469e48adbe57c8d40, type: 3}
   buttonClickSFX: {fileID: 8300000, guid: 401f06e6aaa97b44aa48a6d7ba62be47, type: 3}
   buttonHighlightSFX: {fileID: 8300000, guid: 846b40dd50fd97a43b0ef2a471c6134d, type: 3}
   jumpSFX: {fileID: 0}
