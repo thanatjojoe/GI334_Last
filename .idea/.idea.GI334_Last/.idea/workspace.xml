@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="" />
+    <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Caravel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Caravel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Frigate.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Frigate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Galleon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Galleon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Merchantman.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Merchantman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Privateer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyAsset/Texture Asset/NavalUnitReplace/Privateer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Units/NavalUnit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Units/NavalUnit.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +129,7 @@
       <workItem from="1795626810697" duration="772000" />
       <workItem from="1795634497793" duration="2058000" />
       <workItem from="1795637386318" duration="1838000" />
+      <workItem from="1795642334354" duration="604000" />
     </task>
     <servers />
   </component>
