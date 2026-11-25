@@ -90,9 +90,6 @@ public class BuildingSlot : MonoBehaviour, IDropHandler
         int amountToTake = Mathf.Min(100, dragQuantity);
         int cargoLeft = dragQuantity - amountToTake;
 
-        // เรียกใช้ UpdateQuantityStock(-amountToTake) ของ StockSlot ช่อง Fur โดยตรง!
-        AddStockToSlot(furProductId, -amountToTake, curTown);
-
         data.processingAmount = amountToTake;
         data.turnsLeft = processTurns;
 
@@ -114,7 +111,6 @@ public class BuildingSlot : MonoBehaviour, IDropHandler
 
                 if (data.turnsLeft <= 0)
                 {
-                    // เรียกใช้ UpdateQuantityStock(+amount) ของ StockSlot ช่อง Coat โดยตรง!
                     AddStockToSlot(coatProductId, data.processingAmount, town);
 
                     data.processingAmount = 0;
@@ -124,10 +120,8 @@ public class BuildingSlot : MonoBehaviour, IDropHandler
         }
     }
 
-    // ฟังก์ชันค้นหา StockSlot ด้านล่าง แล้วเรียกใช้ UpdateQuantityStock() ของคุณโดยตรง
     private void AddStockToSlot(int targetProductId, int amountChange, Town targetTown)
     {
-        // ถ้ากำลังเปิดหน้าต่างเมืองนี้อยู่ ให้เรียก UpdateQuantityStock() บน StockSlot ด้านล่างเลย
         if (GameManager.instance.CurTown == targetTown && UIManager.instance.TownPanel.activeInHierarchy)
         {
             StockSlot[] slots = Object.FindObjectsByType<StockSlot>(FindObjectsSortMode.None);
@@ -147,7 +141,6 @@ public class BuildingSlot : MonoBehaviour, IDropHandler
             }
         }
 
-        // กรณีผู้เล่นปิดหน้าต่างเมืองไปแล้วตอนครบ 2 เทิร์น ให้บวกเข้า Warehouse ของเมืองนั้นตรงๆ
         targetTown.Warehouse[targetProductId] += amountChange;
     }
 
