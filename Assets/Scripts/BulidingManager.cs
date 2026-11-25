@@ -8,18 +8,22 @@ public class BuildingManager : MonoBehaviour
     public static BuildingManager instance;
 
     [Header("Town Panel UI References")]
-    [SerializeField] private Button openBuildPanelBtn;     // ปุ่ม Build บนหน้าต่างเมือง
-    [SerializeField] private Image warehouseImage;         // รูปภาพโกดัง
-    [SerializeField] private TMP_Text centerTurnText;      // ลาก Text ตัวเลขจากใน Scene มาใส่ช่องนี้
+    [SerializeField] private Button openBuildPanelBtn;
+    [SerializeField] private Image warehouseImage;
+    [SerializeField] private TMP_Text centerTurnText;
+
+    [Header("Crafting Slots (โชว์ตอนสร้างเสร็จ)")]
+    [SerializeField] private GameObject inputSlotObj;
+    [SerializeField] private GameObject outputSlotObj;
 
     [Header("Build Selection Panel")]
-    [SerializeField] private GameObject buildListPanel;    // Panel รายการสิ่งปลูกสร้าง
-    [SerializeField] private Button selectWarehouseBtn;    // ปุ่มแถบ WAREHOUSE ใน Panel
-    [SerializeField] private TMP_Text warehousePriceText;  // ข้อความราคาในแถบ WAREHOUSE
+    [SerializeField] private GameObject buildListPanel;
+    [SerializeField] private Button selectWarehouseBtn;
+    [SerializeField] private TMP_Text warehousePriceText;
 
     [Header("Sprites (Empty -> Finish)")]
-    [SerializeField] private Sprite emptySprite;           // 1. ภาพพื้นที่ว่างเปล่า
-    [SerializeField] private Sprite finishSprite;          // 2. ภาพโกดัง (ใช้ทั้งตอนกำลังสร้าง 50% และสร้างเสร็จ 100%)
+    [SerializeField] private Sprite emptySprite;
+    [SerializeField] private Sprite finishSprite;
 
     [Header("Construction Settings")]
     [SerializeField] private int buildCost = 200;
@@ -41,16 +45,9 @@ public class BuildingManager : MonoBehaviour
             lastCheckedYear = GameManager.instance.Year;
         }
 
-        if (buildListPanel != null)
-        {
-            buildListPanel.SetActive(false);
-        }
-
-        // ซ่อน Text ตัวเลขไว้ตั้งแต่เริ่มเกม
-        if (centerTurnText != null)
-        {
-            centerTurnText.gameObject.SetActive(false);
-        }
+        SafeSetActive(buildListPanel, false);
+        if (centerTurnText != null) SafeSetActive(centerTurnText.gameObject, false);
+        ToggleCraftingSlots(false);
     }
 
     void Update()
@@ -67,9 +64,9 @@ public class BuildingManager : MonoBehaviour
         {
             UpdateWarehouseUI();
         }
-        else if (buildListPanel != null && buildListPanel.activeInHierarchy)
+        else
         {
-            buildListPanel.SetActive(false);
+            SafeSetActive(buildListPanel, false);
         }
     }
 
@@ -96,53 +93,72 @@ public class BuildingManager : MonoBehaviour
         Town curTown = GameManager.instance.CurTown;
         if (curTown == null) return;
 
-        if (openBuildPanelBtn != null)
+        if (openBuildPanelBtn != null && !openBuildPanelBtn.interactable)
             openBuildPanelBtn.interactable = true;
 
         if (warehouseImage != null)
-            warehouseImage.gameObject.SetActive(true);
+            SafeSetActive(warehouseImage.gameObject, true);
 
         if (completedTowns.Contains(curTown))
         {
-            // 3. สร้างเสร็จแล้ว -> ซ่อน Text ตัวเลข (SetActive = false)
+            // 3. สร้างเสร็จแล้ว
             if (warehouseImage != null)
             {
-                warehouseImage.sprite = finishSprite;
+                if (warehouseImage.sprite != finishSprite) warehouseImage.sprite = finishSprite;
                 SetImageAlpha(warehouseImage, 1f);
             }
-            if (centerTurnText != null)
-                centerTurnText.gameObject.SetActive(false);
+            if (centerTurnText != null) SafeSetActive(centerTurnText.gameObject, false);
+            ToggleCraftingSlots(true);
         }
         else if (buildingProgress.ContainsKey(curTown))
         {
-            // 2. กำลังสร้าง -> เปิดโชว์ Text (2 Turns / 1 Turn)
+            // 2. กำลังสร้าง
             if (warehouseImage != null)
             {
-                warehouseImage.sprite = finishSprite;
+                if (warehouseImage.sprite != finishSprite) warehouseImage.sprite = finishSprite;
                 SetImageAlpha(warehouseImage, 0.5f);
             }
             if (centerTurnText != null)
             {
                 int turnsLeft = buildingProgress[curTown];
-                centerTurnText.gameObject.SetActive(true);
-                centerTurnText.text = (turnsLeft > 1) ? $"{turnsLeft} Turns" : $"{turnsLeft} Turn";
+                string newText = (turnsLeft > 1) ? $"{turnsLeft} Turns" : $"{turnsLeft} Turn";
+                
+                SafeSetActive(centerTurnText.gameObject, true);
+                if (centerTurnText.text != newText) centerTurnText.text = newText;
             }
+            ToggleCraftingSlots(false);
         }
         else
         {
-            // 1. ยังไม่สร้าง -> ซ่อน Text ตัวเลข (SetActive = false)
+            // 1. ยังไม่สร้าง
             if (warehouseImage != null)
             {
-                warehouseImage.sprite = emptySprite;
+                if (warehouseImage.sprite != emptySprite) warehouseImage.sprite = emptySprite;
                 SetImageAlpha(warehouseImage, 1f);
             }
-            if (centerTurnText != null)
-                centerTurnText.gameObject.SetActive(false);
+            if (centerTurnText != null) SafeSetActive(centerTurnText.gameObject, false);
+            ToggleCraftingSlots(false);
         }
+    }
+
+    // ฟังก์ชันสั่ง SetActive เฉพาะตอนที่สถานะเปลี่ยนจริงๆ (แก้ปัญหากระพริบ 100%)
+    private void SafeSetActive(GameObject obj, bool state)
+    {
+        if (obj != null && obj.activeSelf != state)
+        {
+            obj.SetActive(state);
+        }
+    }
+
+    private void ToggleCraftingSlots(bool isActive)
+    {
+        SafeSetActive(inputSlotObj, isActive);
+        SafeSetActive(outputSlotObj, isActive);
     }
 
     private void SetImageAlpha(Image img, float alpha)
     {
+        if (Mathf.Approximately(img.color.a, alpha)) return;
         Color c = img.color;
         c.a = alpha;
         img.color = c;
@@ -155,7 +171,7 @@ public class BuildingManager : MonoBehaviour
 
         if (buildListPanel != null)
         {
-            buildListPanel.SetActive(true);
+            SafeSetActive(buildListPanel, true);
             buildListPanel.transform.SetAsLastSibling();
 
             int targetTurns = (turnsToBuild <= 0) ? 2 : turnsToBuild;
@@ -195,25 +211,14 @@ public class BuildingManager : MonoBehaviour
             buildingProgress.Add(curTown, targetTurns);
 
             UIManager.instance.UpdateMoneyText();
-
-            if (buildListPanel != null)
-                buildListPanel.SetActive(false);
-
-            // เปิดโชว์ตัวเลขเทิร์นทันทีที่กดปุ่มสร้าง
-            if (centerTurnText != null)
-            {
-                centerTurnText.gameObject.SetActive(true);
-                centerTurnText.text = targetTurns.ToString();
-            }
-
+            SafeSetActive(buildListPanel, false);
             UpdateWarehouseUI();
         }
     }
 
     public void OnClickCloseBuildListPanel()
     {
-        if (buildListPanel != null)
-            buildListPanel.SetActive(false);
+        SafeSetActive(buildListPanel, false);
     }
 
     public bool HasWarehouse(Town town)
