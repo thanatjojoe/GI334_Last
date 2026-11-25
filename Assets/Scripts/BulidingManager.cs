@@ -14,7 +14,7 @@ public class BuildingManager : MonoBehaviour
 
     [Header("Crafting Slots (โชว์ตอนสร้างเสร็จ)")]
     [SerializeField] private GameObject inputSlotObj;
-    [SerializeField] private GameObject outputSlotObj;
+    
 
     [Header("Build Selection Panel")]
     [SerializeField] private GameObject buildListPanel;
@@ -153,7 +153,7 @@ public class BuildingManager : MonoBehaviour
     private void ToggleCraftingSlots(bool isActive)
     {
         SafeSetActive(inputSlotObj, isActive);
-        SafeSetActive(outputSlotObj, isActive);
+       
     }
 
     private void SetImageAlpha(Image img, float alpha)
