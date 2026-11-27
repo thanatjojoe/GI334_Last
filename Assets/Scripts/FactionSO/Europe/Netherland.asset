@@ -17,6 +17,6 @@ MonoBehaviour:
   flagIcon: {fileID: 3540859432704698677, guid: f42da81713edc434fa2dc5a7a9854ede, type: 3}
   shieldIcon: {fileID: 3540859432704698677, guid: f42da81713edc434fa2dc5a7a9854ede, type: 3}
   unitIcon: {fileID: 21300000, guid: 15140c267e9462542a6585bb7b71989b, type: 3}
-  townIcon: {fileID: 21300000, guid: c1f4441d125c0934eb9e0b8bbbfb67a2, type: 3}
+  townIcon: {fileID: 21300000, guid: 432dad6b01f92954c9932a428af101c5, type: 3}
   isTropicalNatives: 0
   leaderSprite: {fileID: -3866787957022600208, guid: 5028ce9eff58d43488c51b41b20ecd52, type: 3}
