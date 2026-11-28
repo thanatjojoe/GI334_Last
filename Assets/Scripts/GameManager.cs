@@ -683,11 +683,16 @@ public class GameManager : MonoBehaviour
 
     public void HideOtherLandUnits(Unit thisUnit)
     {
-        if (thisUnit.CurHex == null)
+        if (thisUnit == null || thisUnit.CurHex == null)
             return;
+        
+        thisUnit.CurHex.UnitsInHex.RemoveAll(u => u == null);
 
         foreach (Unit other in thisUnit.CurHex.UnitsInHex)
         {
+            if (other == null)
+                continue;
+
             if (other.UnitType == UnitType.Land && other.Faction == playerFaction)
             {
                 if (other != thisUnit)
@@ -698,11 +703,16 @@ public class GameManager : MonoBehaviour
 
     public void ShowOtherLandUnits(Unit thisUnit)
     {
-        if (thisUnit.CurHex == null)
+        if (thisUnit == null || thisUnit.CurHex == null)
             return;
+        
+        thisUnit.CurHex.UnitsInHex.RemoveAll(u => u == null);
 
         foreach (Unit other in thisUnit.CurHex.UnitsInHex)
         {
+            if (other == null)
+                continue;
+
             if (other.UnitType == UnitType.Land && other.Faction == playerFaction)
             {
                 if (other != thisUnit && (other.UnitStatus != UnitStatus.WorkInField && other.UnitStatus != UnitStatus.OnBoard))

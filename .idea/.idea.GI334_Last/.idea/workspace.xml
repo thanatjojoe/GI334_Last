@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45b420d7-db01-44e7-83a5-104a9bb186b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GI334_Last/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialog/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialog/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NavalUnitSO/000_Caravel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NavalUnitSO/000_Caravel.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <workItem from="1795642334354" duration="604000" />
       <workItem from="1795647360682" duration="650000" />
       <workItem from="1795843731968" duration="345000" />
-      <workItem from="1795847091687" duration="668000" />
+      <workItem from="1795847091687" duration="2146000" />
     </task>
     <servers />
   </component>
