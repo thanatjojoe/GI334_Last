@@ -19919,7 +19919,7 @@ GameObject:
   - component: {fileID: 767647357}
   - component: {fileID: 767647356}
   m_Layer: 5
-  m_Name: Armory (9)
+  m_Name: Warehouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19934,14 +19934,14 @@ RectTransform:
   m_GameObject: {fileID: 767647354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297, y: -81}
+  m_AnchoredPosition: {x: 297, y: -95}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767647356
@@ -21813,7 +21813,7 @@ GameObject:
   - component: {fileID: 840444476}
   - component: {fileID: 840444475}
   m_Layer: 5
-  m_Name: Armory (5)
+  m_Name: Dock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24463,7 +24463,7 @@ GameObject:
   - component: {fileID: 939951941}
   - component: {fileID: 939951940}
   m_Layer: 5
-  m_Name: Armory (1)
+  m_Name: Carpenter's Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26645,7 +26645,7 @@ GameObject:
   - component: {fileID: 1027145548}
   - component: {fileID: 1027145547}
   m_Layer: 5
-  m_Name: Armory (12)
+  m_Name: Stockade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26660,14 +26660,14 @@ RectTransform:
   m_GameObject: {fileID: 1027145545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: -81}
+  m_AnchoredPosition: {x: -294, y: -94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1027145547
@@ -28486,7 +28486,7 @@ GameObject:
   - component: {fileID: 1093699314}
   - component: {fileID: 1093699313}
   m_Layer: 5
-  m_Name: Armory (4)
+  m_Name: Custom House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28501,7 +28501,7 @@ RectTransform:
   m_GameObject: {fileID: 1093699311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
@@ -29668,7 +29668,7 @@ GameObject:
   - component: {fileID: 1135137061}
   - component: {fileID: 1135137060}
   m_Layer: 5
-  m_Name: Armory (10)
+  m_Name: Townhall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34409,7 +34409,7 @@ GameObject:
   - component: {fileID: 1359542268}
   - component: {fileID: 1359542267}
   m_Layer: 5
-  m_Name: Armory
+  m_Name: Church
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36991,7 +36991,7 @@ GameObject:
   - component: {fileID: 1467563583}
   - component: {fileID: 1467563582}
   m_Layer: 5
-  m_Name: Armory (8)
+  m_Name: Weaver's House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37006,14 +37006,14 @@ RectTransform:
   m_GameObject: {fileID: 1467563580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 417, y: -81}
+  m_AnchoredPosition: {x: 417, y: -91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467563582
@@ -39701,7 +39701,7 @@ GameObject:
   - component: {fileID: 1578977856}
   - component: {fileID: 1578977855}
   m_Layer: 5
-  m_Name: Armory (11)
+  m_Name: Tobacconist's House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39716,14 +39716,14 @@ RectTransform:
   m_GameObject: {fileID: 1578977853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71, y: -81}
+  m_AnchoredPosition: {x: 60, y: -91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578977855
@@ -40561,7 +40561,7 @@ GameObject:
   - component: {fileID: 1604765742}
   - component: {fileID: 1604765741}
   m_Layer: 5
-  m_Name: Armory (3)
+  m_Name: 'Armory '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40576,7 +40576,7 @@ RectTransform:
   m_GameObject: {fileID: 1604765739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
@@ -42163,7 +42163,7 @@ GameObject:
   - component: {fileID: 1643088119}
   - component: {fileID: 1643088118}
   m_Layer: 5
-  m_Name: Armory (15)
+  m_Name: Schoolhouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42185,7 +42185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -81}
+  m_AnchoredPosition: {x: -60, y: -90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643088118
@@ -42644,7 +42644,7 @@ GameObject:
   - component: {fileID: 1661061711}
   - component: {fileID: 1661061710}
   m_Layer: 5
-  m_Name: Armory (7)
+  m_Name: Rum Distiller's House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42659,7 +42659,7 @@ RectTransform:
   m_GameObject: {fileID: 1661061708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
@@ -44046,7 +44046,7 @@ GameObject:
   - component: {fileID: 1722103506}
   - component: {fileID: 1722103505}
   m_Layer: 5
-  m_Name: Armory (6)
+  m_Name: Printing Press
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44061,14 +44061,14 @@ RectTransform:
   m_GameObject: {fileID: 1722103503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: 29}
+  m_AnchoredPosition: {x: 286, y: 29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722103505
@@ -54555,7 +54555,7 @@ GameObject:
   - component: {fileID: 2101637630}
   - component: {fileID: 2101637629}
   m_Layer: 5
-  m_Name: Armory (2)
+  m_Name: Blacksmith's House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54570,14 +54570,14 @@ RectTransform:
   m_GameObject: {fileID: 2101637627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 582108676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 179, y: 135}
+  m_AnchoredPosition: {x: 183.3, y: 135}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101637629
@@ -54767,7 +54767,7 @@ GameObject:
   - component: {fileID: 2109896896}
   - component: {fileID: 2109896895}
   m_Layer: 5
-  m_Name: Armory (13)
+  m_Name: Stable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54789,7 +54789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: -81}
+  m_AnchoredPosition: {x: -182, y: -96}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109896895
