@@ -83,19 +83,32 @@ public class Dialog : MonoBehaviour
             noText.text = data.answers[1];
     }
 
-    public void DialogCombatAnalysisInit(Unit attacker, Unit defender)
-    {
-        //Debug.Log(attackerFactionImage);
-        attackerFactionImage.sprite = attacker.Faction.ShieldIcon;
-        attackerImage[0].sprite = attacker.UnitSprite.sprite;
-        attackerNameText[0].text = attacker.UnitName;
-        attackerStrText[0].text = attacker.Strength.ToString();
-
-        defenderFactionImage.sprite = defender.Faction.ShieldIcon;
-        defenderImage[0].sprite = defender.UnitSprite.sprite;
-        defenderNameText[0].text = defender.UnitName;
-        defenderStrText[0].text = defender.Strength.ToString();
-    }
+   public void DialogCombatAnalysisInit(Unit attacker, Unit defender)
+   {
+       if (attacker != null)
+       {
+           attackerFactionImage.sprite = attacker.Faction.ShieldIcon;
+           attackerNameText[0].text = attacker.UnitName;
+           attackerStrText[0].text = attacker.Strength.ToString();
+   
+           if (attacker.UnitSprite != null)
+           {
+               attackerImage[0].sprite = attacker.UnitSprite.sprite;
+           }
+       }
+   
+       if (defender != null)
+       {
+           defenderFactionImage.sprite = defender.Faction.ShieldIcon;
+           defenderNameText[0].text = defender.UnitName;
+           defenderStrText[0].text = defender.Strength.ToString();
+   
+           if (defender.UnitSprite != null)
+           {
+               defenderImage[0].sprite = defender.UnitSprite.sprite;
+           }
+       }
+   }
 
     public void DialogCombatResultInit(Unit winner, Unit loser)
     {

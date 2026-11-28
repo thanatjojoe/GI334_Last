@@ -316,6 +316,9 @@ public class GameManager : MonoBehaviour
 
     public void SelectPlayerUnit(Unit unit)
     {
+        if (unit == null)
+            return;
+
         if (curUnit != null)
         {
             ClearToggleBorder(curUnit);
@@ -338,7 +341,6 @@ public class GameManager : MonoBehaviour
 
         HideOtherLandUnits(curUnit);
         FocusPlayerUnit(curUnit);
-        //Debug.Log(curUnit);
     }
 
     public bool CheckIfHexIsAdjacent(Hex centerHex, Hex targetHex)
@@ -477,6 +479,9 @@ public class GameManager : MonoBehaviour
 
     private void SelectNextPlayerUnit()
     {
+        if (playerFaction.Units.Count == 0)
+            return;
+
         int i = FindIndexOfCurUnit();
         i++;
 
@@ -806,12 +811,12 @@ public class GameManager : MonoBehaviour
 
     public void SetupDeadUnit(Unit deadUnit)
     {
-        
         if (deadUnit == null)
             return;
 
         Faction faction = deadUnit.Faction;
         Hex hex = deadUnit.CurHex;
+        bool needReselectPlayerUnit = false;
 
         if (deadUnit.UnitType == UnitType.Naval)
         {
@@ -819,9 +824,14 @@ public class GameManager : MonoBehaviour
 
             foreach (LandUnit passenger in ship.Passengers)
             {
-                
                 if (passenger == null)
                     continue;
+
+                if (curUnit == passenger)
+                {
+                    curUnit = null;
+                    needReselectPlayerUnit = true;
+                }
 
                 if (hex != null && hex.UnitsInHex.Contains(passenger))
                     hex.UnitsInHex.Remove(passenger);
@@ -834,14 +844,28 @@ public class GameManager : MonoBehaviour
             ship.Passengers.Clear();
         }
 
+        if (curUnit == deadUnit)
+        {
+            curUnit = null;
+            needReselectPlayerUnit = true;
+        }
+
+        if (curTarget == deadUnit)
+            curTarget = null;
+
         if (hex != null && hex.UnitsInHex.Contains(deadUnit))
             hex.UnitsInHex.Remove(deadUnit);
 
         if (faction != null)
             faction.Units.Remove(deadUnit);
 
-       
         Destroy(deadUnit.gameObject);
+
+    
+        if (needReselectPlayerUnit && faction == playerFaction)
+        {
+            SelectPlayerFirstUnit();
+        }
     }
 
 
@@ -871,11 +895,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Hide Combat Dialog");
         DialogManager.instance.ToggleCombatPanel(false);
 
-        //loser dies animation
-        Debug.Log("Animation");
+   
+        ShowMilitaryResultDialog(winner, loser);
 
         SetupDeadUnit(loser);
-        ShowMilitaryResultDialog(winner, loser);
     }
 
     public void StartCombat(Unit attacker, Unit defender)
